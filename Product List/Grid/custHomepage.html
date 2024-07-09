@@ -1,0 +1,141 @@
+<?php 
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class = "products">
+            <div class = "container">
+                <h1 class = "lg-title"><b>APOLLO HOSPITAL</b></h1>
+                <p class = "text-light">Review Your Capital Products' Status Here</p>
+
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "images/1.png" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Synthes</h2>
+                            </div>
+                            <a href = "http://localhost/Ansh%20Pardeshi%20ITGS%20IA/Product/product%20details/Product%201/index%201.html" class = "product-name">Drill / Reamer</a>
+                            
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">Under Repair</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "images/2.png" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+
+                              
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Synthes</h2>
+                            </div>
+                            <a href = "http://localhost/Ansh%20Pardeshi%20ITGS%20IA/Product/product%20details/Product%202/index%202.html" class = "product-name">Oscillating Saw</a>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "images/3.png" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+
+                               
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Synthes</h2>
+                              
+                            </div>
+                            <a href = "http://localhost/Ansh%20Pardeshi%20ITGS%20IA/Product/product%20details/Product%203/index%203.html" class = "product-name">Lithium Ion Battery</a>
+                      
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "images/4.png" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+
+                               
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Sythes</h2>
+                            </div>
+                            <a href = "http://localhost/Ansh%20Pardeshi%20ITGS%20IA/Product/product%20details/Product%204/index%204.html" class = "product-name">U.B charger</a>
+                        </div>
+
+                        <div class = "off-info2">
+                            <h2 class = "sm-title">Outdated</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->   
+                </div>
+                <!-- Contract countdown -->
+                <div class = "Timer">
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title-timer">Contract Validity</h2>
+                        </div>
+                            <a href = "http://localhost/Ansh%20Pardeshi%20ITGS%20IA/Product/Product%20List/Countdown%20Clock/index.html" target="_blank" class = "product-name">Check when you contract ends</a>
+                    </div>
+                </div>
+
+                <div class = "Timer">
+                    <div class = "product-info">
+                        <a href="logout.php" class = "sm-title-timer">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
+<?php 
+}else{
+     header("Location: index.html");
+     exit();
+}
+?>
